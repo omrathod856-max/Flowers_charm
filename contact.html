@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | Luxury Flowers</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="logo">Flowers Charm</div>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="contact.html" class="active">Contact Us</a>
+    </div>
+  </nav>
+
+  <section class="hero contact-hero">
+    <div class="hero-content">
+      <h1>Contact Us</h1>
+      <p>We’d love to hear from you. Let’s stay connected!</p>
+    </div>
+  </section>
+
+  <section class="contact-page">
+    <h2>Get in Touch</h2>
+    <p>Email: contact@flowerscharm.com</p>
+    <p>Phone: +91 90909 09090</p>
+    <p>Address:Mumbai, India</p>
+
+    <form class="contact-form">
+      <input type="email" placeholder="Your Email" required id="email">
+      <input type="phone" placeholder="Contact Number" required id="phone">
+      <textarea placeholder="Your Message" rows="5" required></textarea>
+      <button type="submit" onclick="validateEntries()" class="btn btn-primary">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Flowers Charm. All Rights Reserved.</p>
+  </footer>
+  <script src="script.js"></script>
+
+</body>
+</html>

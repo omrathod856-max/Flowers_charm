@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Change Background Color</title>
+ <style>
+   h1 {
+     text-align: center;
+     margin-top: 50px;
+   }
+   #colorName {
+     font-size: 24px;
+     font-weight: bold;
+     text-align: center;
+     margin-top: 20px;
+   }
+ </style>
+</head>
+<body>
+ <h1>Background color will change every 5 seconds!</h1>
+ <p id="colorName"></p>
+
+ <script>
+   const colors = ["lightblue", "lightgreen", "lightpink", "lightyellow", "lightgray"];
+   let index = 0;
+
+   function changeColor() {
+     document.body.style.backgroundColor = colors[index];
+     document.getElementById("colorName").textContent = "Current Color: " + colors[index];
+     index = (index + 1) % colors.length;
+   }
+
+   changeColor();
+   setInterval(changeColor, 5000);
+ </script>
+</body>
+</html>
