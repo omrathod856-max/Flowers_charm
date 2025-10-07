@@ -252,3 +252,149 @@ footer a:hover {
   font-size: 20px;
   font-family:"Poppins",sans-serif;
 }
+
+
+
+/* Scroll-to-top button */
+.scroll-top {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  background: #d4af37;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: none;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+  z-index: 999;
+}
+
+.scroll-top:hover {
+  transform: scale(1.1);
+}
+
+
+.dark-toggle {
+  position: fixed;
+  bottom: 25px;
+  left: 25px;
+  background: #d4af37;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  z-index: 999;
+}
+
+.dark-mode {
+  background: #222;
+  color: #eee;
+}
+.dark-mode footer {
+  background: #000;
+  color: #ccc;
+}
+.dark-mode .navbar {
+  background: rgba(30,30,30,0.95);
+}
+
+.popup {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.6);
+  display: flex; justify-content: center; align-items: center;
+  z-index: 10000;
+}
+.popup-content {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  text-align: center;
+  max-width: 300px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+}
+.popup-content input {
+  padding: 8px; margin: 10px 0; width: 90%;
+}
+.popup-content button {
+  margin: 5px; padding: 8px 15px; border: none;
+  border-radius: 6px; background: #d4af37; color: white;
+  cursor: pointer;
+}
+
+.collection-section {
+  text-align: center;
+  margin: 40px 0;
+}
+
+#searchBox {
+  width: 60%;
+  padding: 10px;
+  margin: 20px auto;
+  border-radius: 20px;
+  border: 2px solid #d4af37;
+  outline: none;
+  display: block;
+  font-size: 1rem;
+}
+
+.collection-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  padding: 20px;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 15px;
+  padding: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.03);
+}
+
+.card img {
+  width: 100%;
+  height: 220px;
+  border-radius: 15px;
+  object-fit: cover;
+}
+
+.card h3 {
+  margin: 10px 0 5px;
+  color: #444;
+}
+
+.card p {
+  color: #777;
+  margin-bottom: 10px;
+}
+
+.card button {
+  background-color: #d4af37;
+  border: none;
+  color: white;
+  padding: 8px 15px;
+  margin: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.card button:hover {
+  background-color: #c59e2f;
+}
